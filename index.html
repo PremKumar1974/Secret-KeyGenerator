@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class = "container">
+            <h2>Password Generator</h2>
+            <div class="result-container">
+                <span id="result"></span>
+                <button class="btn" id="clipboard">
+                <i class = "fas fa-copy"></i>
+                </button>
+            </div>
+            <div class = "Letters">
+                <div class = "Letter">
+                    <label for="length">Password Size</label>
+                    <input type = "number" id = "length" value="8" min = "8" max="22">
+                </div>
+                <div class = "Letter">
+                    <label for="uppercase">Use Uppercase Letters</label>
+                    <input type = "checkbox" id = "uppercase" checked>
+                </div>
+                <div class = "Letter">
+                    <label for="lowercase">Use Lowercase Letters</label>
+                    <input type = "checkbox" id = "lowercase" checked>
+                </div>
+                <div class = "Letter">
+                    <label for="numbers">Use Numbers</label>
+                    <input type = "checkbox" id = "numbers" checked>
+                </div>
+                <div class = "Letter">
+                    <label for="symbols">Use Special Characters</label>
+                    <input type = "checkbox" id = "symbols" checked>
+                </div>
+                <div class = "generate-button">
+                    <button class = "btn generate-btn" id="generate">Generate Password</button>
+                </div>
+            </div>    
+    </div>
+    
+   <script src="script.js"></script> 
+</body>
+</html>
